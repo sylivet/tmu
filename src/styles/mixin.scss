@@ -1,0 +1,58 @@
+// --- rwd --- //
+@mixin desktop {//小螢幕桌機
+    @media(max-width:1297px) {
+        @content;
+    }//
+}
+
+@mixin tablet {//平板
+    @media(max-width:1023px) {
+        @content;
+    }
+}
+
+@mixin mobile {//手機
+    @media(max-width:767px) {
+        @content;
+    }
+}
+
+@mixin lastMedia {//iphone se
+    @media(max-width:320px) {
+        @content;
+    }
+}
+
+@mixin w1024 {
+    @media(max-width:1024px) {
+        @content;
+    }
+}
+
+@mixin w768 {
+    @media(max-width:768px) {
+        @content;
+    }
+}
+
+@mixin w480 {
+    @media(max-width:480px) {
+        @content;
+    }
+}
+
+//mixin --
+@mixin underline ($fs, $num, $color) {
+    &::after {
+        content: "";
+        display: block;
+        width: calc($fs * $num);
+        height: 1px;
+        margin-top: 3px;
+        background-color: $color;
+    }
+}
+
+@mixin letter-spacing($spacing) {
+    letter-spacing: ($spacing / 1000) * 1em;
+}

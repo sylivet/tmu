@@ -1,0 +1,59 @@
+h3 { font-size:32px; color:#c49b49; margin-bottom:30px; width:100%; position:relative;}
+h3.red { color:#721e18;}
+
+table { border:none; border-top:#c49b49 1px solid; width:100%; font-family:Arial, Helvetica, sans-serif, "微軟正黑體"; margin-bottom:50px; border-collapse: collapse; border-spacing: 0;}
+table th { color:#7d7d7d; font-size:16px; background:#fbf8f2; padding: 18px; text-align:left; border:none; font-weight: bold; font-weight:bold; white-space: nowrap;}
+table td { border-bottom:#ededed 1px solid; padding:18px; background:rgba(255,255,255,1);}
+table td.title { font-size:22px; font-weight:bold; white-space: nowrap;}
+table td a { color:#169bcc;}
+/* table td a.phone { background:url(../images/img/icon_phone.png) no-repeat left center; padding: 0 0 0 28px; margin-right:10px;}
+table td a.mail { background:url(../images/img/icon_mail.png) no-repeat left center; padding: 0 0 0 28px; margin-right:10px;} */
+table td a:hover { text-decoration:none; color:#721e18;}
+table td .pass { color:#c49b49;}
+
+table.red { border:none; border-top:#721e18 1px solid; width:100%; font-family:Arial, Helvetica, sans-serif, "微軟正黑體"; margin-bottom:50px; border-collapse: collapse; border-spacing: 0}
+table.red th { color:#7d7d7d; font-size:16px; background:#f5efef; padding: 18px; text-align:left; border:none; white-space: nowrap;}
+table.red td { border-bottom:#ededed 1px solid; padding:18px; background:rgba(255,255,255,1);}
+table.red td.title { font-size:22px; font-weight:bold; white-space: nowrap;}
+table.red td a { color:#169bcc; text-decoration:underline;}
+/* table.red td a.phone { background:url(../images/img/icon_phone.png) no-repeat left center; padding: 0 0 0 28px; margin-right:10px;}
+table.red td a.mail { background:url(../images/img/icon_mail.png) no-repeat left center; padding: 0 0 0 28px; margin-right:10px;} */
+table.red td a:hover { text-decoration:none; color:#721e18;}
+table.red td .pass { color:#c49b49;}
+
+table th.percentTD { width:20%;}
+.RecordTable { width: 100%; overflow-y: auto;}
+.RecordTableOuter { position: relative;}
+
+.sticky { position: sticky; left: 0; z-index: 2;}
+.percent { display: inline-block; width:25%; text-align:right; vertical-align:middle; margin-right:5%; font-size:16px;}
+.percentBar { background:#f0f0f0; width:70%; display:inline-block; height:30px; vertical-align:middle;}
+.percentBar img { height:30px;}
+.percentBar img.bar0 { display:none;}
+.percentBar img.bar25 { width:25%;}
+.percentBar img.bar50 { width:50%;}
+.percentBar img.bar100 { width:100%;}
+
+.note { width:100%; font-size:13px; text-align:center; margin-top:-100px; position:absolute; top:70px;}
+.searchList { display:inline-block; font-size:18px; color:#666; margin-left:15px;}
+.searchList select { border:#e7e7e7 1px solid; padding: 5px; color:#721e18; display:inline-block; margin: 0 10px; font-weight:bold;}
+h3 a { display:inline-block; font-size:18px; position:absolute; right:0; bottom:0; color:#169bcc;}
+
+.tablenote { font-size:15px; color:#666; text-align:right;}
+
+/* --平板版型------------------------------------- */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+table td a.phone b { display:none;}
+table td a.mail b { display:none;}
+}
+
+/* --手機版型------------------------------------- */
+
+@media screen and (max-width: 767px) {
+	
+table td a.phone b { display:none;}
+table td a.mail b { display:none;}
+
+}

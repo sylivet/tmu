@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{> components/basicUse/head-content }}
+  <title>首頁</title>
+</head>
+<body>
+  <header class="header">
+    {{> components/basicUse/header }}
+  </header>
+
+  {{>components/basicUse/fixedGroup}}
+
+  <!-- 主內容 -->
+  <main class="page major-fields-page">
+    <div class="container"
+    >
+	<!-- 標題 -->
+		<h2 class="container__title  major-fields__title"
+		>重點領域</h2>
+
+		<!-- seaching-selection
+		     搜尋的table 
+			 lesson_1
+		-->
+			<table
+			class="major-fields__table  table__seaching-selection"
+			>
+				<tr
+				class="table__seaching-selection--title"
+				>
+					<td
+					>課程</td>
+
+					<td
+					>已修畢課程數</td>
+
+					<td
+					>已修畢學分數</td>
+
+					<td
+					>已修畢課程清單</td>
+
+					<td
+					>熱門/推薦</td>
+
+					<td
+					>全部關閉</td>
+				</tr>
+				<tr
+				class="table__seaching-selection--context"
+				data-tab="lesson_1"
+				>
+					<td
+					>專題研究課程</td>
+
+					<td
+					>2</td>
+
+					<td
+					>2</td>
+
+					<td
+					class="
+					td__search  
+					unshow
+					"
+					data-type="chosen-already"
+					>查詢</td>
+
+					<td
+					class="
+					td__search  
+					unshow
+					"
+					data-type="user-suggestion"
+					>查詢</td>
+
+					<td
+					></td>
+				</tr>				
+			</table>
+
+		<!-- seaching-feedback 
+		     顯示的table-1
+			 lesson_1
+		-->
+			<table
+			class="
+			major-fields__table  
+			table__seaching-feedback
+			type--chosen-already
+
+			table--unshow
+			"
+			data-tab="lesson_1"
+			data-type="chosen-already"
+			>
+					<!--已修畢課程清單  -->
+						<tr
+						class="
+						table__seaching-feedback--context-title
+						title__des
+						chosen-already  
+						title__chosen-already
+						">
+							<td
+							class="context-title__td"
+							>序</td>
+
+							<td
+							class="context-title__td"
+							>修畢學年</td>
+
+							<td
+							class="context-title__td"
+							>開課系所</td>
+
+							<td
+							class="context-title__td"
+							>課號</td>
+
+							<td
+							class="context-title__td"
+							>課程名稱</td>
+
+							<td
+							class="context-title__td"
+							>學分數</td>
+
+							<td
+							class="context-title__td"
+							>類別</td>
+
+						</tr>
+
+						<tr
+						class="
+						table__seaching-feedback--context-content
+						chosen-already  
+						content__chosen-already
+						">
+							<td
+							class="context-content__td"
+							>1</td>
+
+							<td
+							class="context-content__td"
+							>1101</td>
+
+							<td
+							class="context-content__td"
+							>高齡健康管理學系</td>
+
+							<td
+							class="context-content__td"
+							>00110003</td>
+
+							<td
+							class="context-content__td"
+							>老人學導論</td>
+
+							<td
+							class="context-content__td"
+							>2</td>
+
+							<td
+							class="context-content__td"
+							>PsBL</td>
+
+						</tr>
+			</table>
+
+		<!-- seaching-feedback 
+		     顯示的table-2
+			 lesson_1
+		-->
+			<table
+			class="
+			major-fields__table  
+			table__seaching-feedback
+			type--user-suggestion
+
+			table--unshow
+			"
+			data-tab="lesson_1"
+			data-type="user-suggestion"
+			>
+				<!-- 熱門課程 hot -->
+					<tr
+					class="
+					table__seaching-feedback--context-title
+					title__name
+					user-suggestion  
+					title__user-suggestion  
+					title__user-suggestion--hot
+					">
+					  <td
+						colspan="8"
+						>熱門課程</td>
+					</tr>
+
+					<tr
+					class="
+					table__seaching-feedback--context-title
+					title__des
+					user-suggestion
+					title__user-suggestion  
+					title__user-suggestion--hot
+					">
+						<td
+						>序</td>
+						<td
+						>修畢學年</td>
+						<td
+						>開課系所</td>
+						<td
+						>課號</td>
+						<td
+						>課程名稱</td>
+						<td
+						>學分數</td>
+						<td
+						>類別</td>
+					</tr>
+
+					<tr
+					>
+						<td
+						>1</td>
+						<td
+						>{{randomNum 1000 9999}}</td>
+						<td
+						>{{lorem 4 10}}</td>
+						<td
+						>{{randomNum 10000000 99999999}}</td>
+						<td
+						>{{lorem 4 10}}</td>
+						<td
+						>2</td>
+						<td
+						>{{lorem 4 4}}</td>
+					</tr>
+
+				<!-- 推薦課程 specific -->
+					<tr
+					class="
+					table__seaching-feedback--context-title
+					title__name
+					user-suggestion  
+					title__user-suggestion  
+					title__user-suggestion--specific
+					">
+						<td
+						colspan="8"
+						>推薦課程</td>
+					</tr>
+
+					<tr
+					class="
+					table__seaching-feedback--context-title
+					title__des
+					user-suggestion  
+					title__user-suggestion  
+					title__user-suggestion--specific
+					">
+						<td
+						>序</td>
+						<td
+						>修畢學年</td>
+						<td
+						>開課系所</td>
+						<td
+						>課號</td>
+						<td
+						>課程名稱</td>
+						<td
+						>學分數</td>
+						<td
+						>類別</td>
+					</tr>
+					
+					<tr
+					class="
+					table__seaching-feedback--context-content
+					user-suggestion  
+					content__user-suggestion  
+					content__user-suggestion--specific
+					">
+						<td
+						>1</td>
+						<td
+						>{{randomNum 1000 9999}}</td>
+						<td
+						>{{lorem 4 10}}</td>
+						<td
+						>{{randomNum 10000000 99999999}}</td>
+						<td
+						>{{lorem 4 10}}</td>
+						<td
+						>2</td>
+						<td
+						>{{lorem 4 4}}</td>
+					</tr>
+			</table>
+
+
+
+		<!-- seaching-selection
+		     搜尋的table
+			 lesson_2
+		-->
+			<table
+			class="major-fields__table  table__seaching-selection"
+			>
+				<tr
+				class="table__seaching-selection--context"
+				data-tab="lesson_2"
+				>
+					<td
+					>專題研究課程</td>
+
+					<td
+					>2</td>
+
+					<td
+					>2</td>
+
+					<td
+					class="
+					td__search  
+					unshow
+					"
+					data-type="chosen-already"
+					>查詢</td>
+
+					<td
+					class="
+					td__search  
+					unshow
+					"
+					data-type="user-suggestion"
+					>查詢</td>
+
+					<td
+					></td>
+				</tr>				
+			</table>
+
+
+		<!-- seaching-feedback 
+		     顯示的table-1
+			 lesson_2
+		-->
+			<table
+			class="
+			major-fields__table  
+			table__seaching-feedback
+			type--chosen-already
+
+			table--unshow
+			"
+			data-tab="lesson_2"
+			data-type="chosen-already"
+			>
+					<!--已修畢課程清單  -->
+					<tr
+					class="
+					table__seaching-feedback--context-title
+					title__des
+					chosen-already  
+					title__chosen-already
+					">
+						<td
+						class="context-title__td"
+						>序</td>
+
+						<td
+						class="context-title__td"
+						>修畢學年</td>
+
+						<td
+						class="context-title__td"
+						>開課系所</td>
+
+						<td
+						class="context-title__td"
+						>課號</td>
+
+						<td
+						class="context-title__td"
+						>課程名稱</td>
+
+						<td
+						class="context-title__td"
+						>學分數</td>
+
+						<td
+						class="context-title__td"
+						>類別</td>
+
+					</tr>
+
+					<tr
+					class="
+					table__seaching-feedback--context-content
+					chosen-already  
+					content__chosen-already
+					">
+						<td
+						class="context-content__td"
+						>1</td>
+
+						<td
+						class="context-content__td"
+						>1101</td>
+
+						<td
+						class="context-content__td"
+						>高齡健康管理學系</td>
+
+						<td
+						class="context-content__td"
+						>00110003</td>
+
+						<td
+						class="context-content__td"
+						>老人學導論</td>
+
+						<td
+						class="context-content__td"
+						>2</td>
+
+						<td
+						class="context-content__td"
+						>PsBL</td>
+
+					</tr>
+			</table>
+
+		<!-- seaching-feedback 
+		     顯示的table-2
+			 lesson_2
+		-->
+			<table
+			class="
+			major-fields__table  
+			table__seaching-feedback
+			type--user-suggestion
+
+			table--unshow
+			"
+			data-tab="lesson_2"
+			data-type="user-suggestion"
+			>
+					<!-- 熱門課程 hot -->
+						<tr
+						class="
+						table__seaching-feedback--context-title
+						title__name
+						user-suggestion  
+						title__user-suggestion  
+						title__user-suggestion--hot
+						">
+						<td
+							colspan="8"
+							>熱門課程</td>
+						</tr>
+
+						<tr
+						class="
+						table__seaching-feedback--context-title
+						title__des
+						user-suggestion
+						title__user-suggestion  
+						title__user-suggestion--hot
+						">
+							<td
+							>序</td>
+							<td
+							>修畢學年</td>
+							<td
+							>開課系所</td>
+							<td
+							>課號</td>
+							<td
+							>課程名稱</td>
+							<td
+							>學分數</td>
+							<td
+							>類別</td>
+						</tr>
+
+						<tr
+						>
+							<td
+							>1</td>
+							<td
+							>{{randomNum 1000 9999}}</td>
+							<td
+							>{{lorem 4 10}}</td>
+							<td
+							>{{randomNum 10000000 99999999}}</td>
+							<td
+							>{{lorem 4 10}}</td>
+							<td
+							>2</td>
+							<td
+							>{{lorem 4 4}}</td>
+						</tr>
+
+					<!-- 推薦課程 specific -->
+						<tr
+						class="
+						table__seaching-feedback--context-title
+						title__name
+						user-suggestion  
+						title__user-suggestion  
+						title__user-suggestion--specific
+						">
+							<td
+							colspan="8"
+							>推薦課程</td>
+						</tr>
+
+						<tr
+						class="
+						table__seaching-feedback--context-title
+						title__des
+						user-suggestion  
+						title__user-suggestion  
+						title__user-suggestion--specific
+						">
+							<td
+							>序</td>
+							<td
+							>修畢學年</td>
+							<td
+							>開課系所</td>
+							<td
+							>課號</td>
+							<td
+							>課程名稱</td>
+							<td
+							>學分數</td>
+							<td
+							>類別</td>
+						</tr>
+						
+						<tr
+						class="
+						table__seaching-feedback--context-content
+						user-suggestion  
+						content__user-suggestion  
+						content__user-suggestion--specific
+						">
+							<td
+							>1</td>
+							<td
+							>{{randomNum 1000 9999}}</td>
+							<td
+							>{{lorem 4 10}}</td>
+							<td
+							>{{randomNum 10000000 99999999}}</td>
+							<td
+							>{{lorem 4 10}}</td>
+							<td
+							>2</td>
+							<td
+							>{{lorem 4 4}}</td>
+						</tr>
+			</table>
+
+
+    </div>
+  </main>
+
+<footer class="footer">
+  {{> components/basicUse/footer }}
+</footer>
+
+</body>
+
+<script>
+</script>
+</html>

@@ -1,0 +1,58 @@
+//@import 'reset-css';
+@import "normalize.css";
+@import "./variable";
+@import "./mixin";
+@import "./common";
+// @import "./footer.scss";
+
+
+.major-fields-page {
+    outline: 1px solid orange;
+
+    table {
+        outline: 1px solid orange;
+        width: 90%;
+        margin: 0 auto;
+    }
+    tr {
+        height: 50px;
+        line-height: 50px;
+        text-align: left;
+    }
+
+    .table__seaching{
+        &-selection {
+            background-color: #fff;
+        }
+        &-feedback {
+            background-color: rgba($color: #ccc, $alpha: 0.5);
+        }
+    }
+
+    .table__seaching-feedback--context {
+        &-title {
+            &.title__name {
+                background-color: gray;
+                color: #fff;
+            }
+            &.title__des {
+                background-color: burlywood;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.table__seaching-selection {
+    td{
+        width: 15%;
+    }
+    td:first-child, td:last-child{
+        outline: 1px solid green;
+        width: 20%;
+    }
+}
+
+.table--unshow {
+    display: none;
+}
